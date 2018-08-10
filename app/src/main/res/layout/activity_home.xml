@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_startgame"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/default_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/start_game"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible"
+            android:layout_width="200dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:id="@+id/text_statistics"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/HomeActivity_statistics"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible"
+            android:layout_width="200dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:id="@+id/text_theme"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/Theme"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible"
+            android:layout_width="200dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:id="@+id/text_about"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/about"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible"
+            android:layout_height="45dp"
+            android:layout_width="200dp"/>
+
+        <TextView
+            android:id="@+id/text_exit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible"
+            android:layout_width="200dp"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+
+</FrameLayout>

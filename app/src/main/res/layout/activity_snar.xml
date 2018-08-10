@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/SNAR_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="28sp"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="#ffff0000" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_SNAR"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:fillViewport="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:scrollbarSize="1dip">
+
+        <LinearLayout
+            android:id="@+id/SNAR"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/Next"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/default_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/background_dark"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"/>
+
+</LinearLayout>

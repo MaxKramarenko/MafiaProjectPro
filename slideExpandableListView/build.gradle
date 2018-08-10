@@ -1,0 +1,24 @@
+buildscript {
+    ext.kotlin_version = '1.1.1'
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'android-library'
+
+group = 'com.tjerkw.slideexpandable'
+archivesBaseName = 'library'
+version = '1.0'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+}
+
+

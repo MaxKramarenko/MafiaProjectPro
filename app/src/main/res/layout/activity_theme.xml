@@ -1,0 +1,1530 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".theme.ThemeActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ThemeActivity"
+        android:id="@+id/theme_title"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:textStyle="normal"
+        android:typeface="serif" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/imageView18"
+        android:background="#ffff0000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/themes_scrollView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="none"
+        android:fastScrollEnabled="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:alwaysDrawnWithCache="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:scrollbarSize="1dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/themes_backside"
+                android:clickable="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_back"
+                        android:id="@+id/textView28"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:scrollbars="none"
+                    android:requiresFadingEdge="horizontal"
+                    android:id="@+id/themes_card_back_scrollview"
+                    android:alwaysDrawnWithCache="true"
+                    android:smoothScrollbar="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_card_back_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:background="@drawable/pic_card_back_1"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/framelayout_card_back_1"
+                            android:clickable="true"
+                            android:layout_height="290dp"
+                            android:layout_width="200dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_back_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_back_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:layout_marginRight="15dp"
+                            android:id="@+id/framelayout_card_back_2"
+                            android:background="@drawable/pic_card_back_2"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:layout_marginLeft="15dp"
+                            android:focusableInTouchMode="false">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_back_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_back_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_marginRight="15dp"
+                            android:id="@+id/framelayout_card_back_3"
+                            android:background="@drawable/pic_card_back_3"
+                            android:layout_height="290dp"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_back_3"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_back_3"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:layout_marginRight="15dp"
+                            android:id="@+id/framelayout_card_back_4"
+                            android:background="@drawable/pic_card_back_4"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_back_4"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_back_4"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/pic_card_back_5"
+                            android:id="@+id/framelayout_card_back_5"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_back_5"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_back_5"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/pic_card_back_6"
+                            android:id="@+id/framelayout_card_back_6"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_back_6"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_back_6"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/pic_card_back_7"
+                            android:id="@+id/framelayout_card_back_7"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_back_7"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_back_7"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_back_8"
+                            android:id="@+id/framelayout_card_back_8"
+                            android:layout_marginRight="10dp"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_back_8"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_back_8"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView20"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:id="@+id/themes_doctor"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_doctor"
+                        android:id="@+id/textView296"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/themes_card_doctor_scrollview"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    android:alwaysDrawnWithCache="true"
+                    android:smoothScrollbar="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_card_doctor_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_doctor_1"
+                            android:id="@+id/framelayout_card_doctor_1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="200dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                android:text="@string/doctor"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_doctor_1"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_doctor_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_doctor_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_doctor_2"
+                            android:id="@+id/framelayout_card_doctor_2"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:text="@string/doctor"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_doctor_2"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_doctor_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_doctor_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView24"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:id="@+id/themes_whore"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_whore"
+                        android:id="@+id/textView29"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/themes_card_whore_scrollview"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    android:alwaysDrawnWithCache="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_card_whore_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_whore_1"
+                            android:id="@+id/framelayout_card_whore_1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                android:text="@string/whore"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_whore_1"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_whore_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_whore_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_whore_2"
+                            android:id="@+id/framelayout_card_whore_2"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:text="@string/whore"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_whore_2"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_whore_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_whore_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView7"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:id="@+id/themes_maniac"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_maniac"
+                        android:id="@+id/textView2911"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/themes_card_maniac_scrollview"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    android:alwaysDrawnWithCache="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_card_maniac_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_maniac_1"
+                            android:id="@+id/framelayout_card_maniac_1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                android:text="@string/maniac"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_maniac_1"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_maniac_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_maniac_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_maniac_2"
+                            android:id="@+id/framelayout_card_maniac_2"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:text="@string/maniac"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_maniac_2"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_maniac_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_maniac_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView9"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:id="@+id/themes_sheriff"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_sheriff"
+                        android:id="@+id/textView2921"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/themes_card_sheriff_scrollview"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    android:alwaysDrawnWithCache="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_card_sheriff_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_sheriff_1"
+                            android:id="@+id/framelayout_card_sheriff_1"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:text="@string/sheriff"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_sheriff_1"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_sheriff_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_sheriff_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_sheriff_2"
+                            android:id="@+id/framelayout_card_sheriff_2"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                android:text="@string/sheriff"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_sheriff_2"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_sheriff_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_sheriff_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_sheriff_3"
+                            android:id="@+id/framelayout_card_sheriff_3"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:text="@string/sheriff"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_sheriff_3"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_sheriff_3"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_sheriff_3"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView10"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:id="@+id/themes_godfather"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_godfather"
+                        android:id="@+id/textView2922"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/themes_card_godfather_scrollview"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    android:alwaysDrawnWithCache="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_card_godfather_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_godfather_1"
+                            android:id="@+id/framelayout_card_godfather_1"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:text="@string/godfather"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_godfather_1"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_godfather_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_godfather_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_godfather_2"
+                            android:id="@+id/framelayout_card_godfather_2"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:text="@string/godfather"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_godfather_2"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_godfather_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_godfather_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView11"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:id="@+id/themes_mafia"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_mafia"
+                        android:id="@+id/textView2923"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/themes_card_mafia_scrollview"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    android:alwaysDrawnWithCache="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_card_mafia_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_mafia_1"
+                            android:id="@+id/framelayout_card_mafia_1"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:text="@string/mafia"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_mafia_1"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_mafia_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_mafia_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_mafia_2"
+                            android:id="@+id/framelayout_card_mafia_2"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                android:text="@string/mafia"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_mafia_2"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_mafia_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_mafia_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_mafia_3"
+                            android:id="@+id/framelayout_card_mafia_3"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:text="@string/mafia"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_mafia_3"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_mafia_3"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_mafia_3"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView12"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:id="@+id/themes_civilian"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_civilian"
+                        android:id="@+id/textView2924"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/themes_card_civilian_scrollview"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    android:alwaysDrawnWithCache="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_card_civilian_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_civilian_1"
+                            android:id="@+id/framelayout_card_civilian_1"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:text="@string/civilian"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_civilian_1"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_civilian_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_civilian_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="200dp"
+                            android:layout_height="290dp"
+                            android:background="@drawable/pic_card_civilian_2"
+                            android:id="@+id/framelayout_card_civilian_2"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:text="@string/civilian"
+                                android:layout_width="match_parent"
+                                android:id="@+id/textview_card_civilian_2"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textIsSelectable="false"
+                                android:typeface="serif"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="24dp"
+                                android:textAllCaps="true"/>
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_card_civilian_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_card_civilian_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView13"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:id="@+id/themes_greendesk"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/ThemeActivity_background"
+                        android:id="@+id/textView2925"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textIsSelectable="false"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/themes_greendesk_scrollview"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    android:alwaysDrawnWithCache="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/themes_greendesk_linearlayout"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:background="@drawable/pic_background_1"
+                            android:id="@+id/framelayout_greendesk_1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="200dp"
+                            android:layout_height="300dp">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_greendesk_1"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_greendesk_1"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:background="@drawable/pic_background_2"
+                            android:id="@+id/framelayout_greendesk_2"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="200dp"
+                            android:layout_height="300dp"
+                            android:layout_marginRight="15dp">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_greendesk_2"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_greendesk_2"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:background="@drawable/pic_background_3"
+                            android:id="@+id/framelayout_greendesk_3"
+                            android:layout_width="200dp"
+                            android:layout_height="300dp"
+                            android:layout_marginRight="15dp">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_greendesk_3"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_greendesk_3"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:background="@drawable/pic_background_4"
+                            android:id="@+id/framelayout_greendesk_4"
+                            android:layout_width="200dp"
+                            android:layout_height="300dp"
+                            android:layout_marginRight="15dp">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_greendesk_4"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_greendesk_4"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:background="@drawable/pic_background_5"
+                            android:id="@+id/framelayout_greendesk_5"
+                            android:layout_width="200dp"
+                            android:layout_height="300dp"
+                            android:layout_marginRight="10dp">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview_greendesk_5"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/black"
+                                android:alpha="0.5"
+                                android:visibility="invisible"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_greendesk_5"
+                                android:background="@drawable/pic_theme_done"
+                                android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView14"
+                android:background="@color/divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

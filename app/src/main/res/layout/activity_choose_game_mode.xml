@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout_CustomizeGame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    android:weightSum="1"
+    tools:context=".startgame.CustomizeGameActivity">
+
+    <TextView
+        android:id="@+id/choosegamemode_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:singleLine="false"
+        android:text="@string/GameMode_ChooseGameMode"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/image_customize_redline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="#ff0000" />
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbarDefaultDelayBeforeFade="700"
+        android:requiresFadingEdge="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:scrollbarSize="1dip">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_chooseGameMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/button_presetclassic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/itemingloballist_lwp"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/text_WithDoctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:focusableInTouchMode="false"
+                        android:text="@string/classic_ChooseGameMode"
+                        android:textColor="#ffffffff"
+                        android:textSize="21sp" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/ChooseGameMode_classic_info"
+                    android:textColor="@color/secondText"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/button_presetindaclub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/itemingloballist_lwp"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:focusableInTouchMode="false"
+                        android:text="@string/club_ChooseGameMode"
+                        android:textColor="#ffffffff"
+                        android:textSize="21sp" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/ChooseGameMode_clubinfo"
+                    android:textColor="@color/secondText"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/button_presetcustomize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/itemingloballist_lwp"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:focusableInTouchMode="false"
+                        android:text="@string/ChooseGameMode_Customize"
+                        android:textColor="#ffffffff"
+                        android:textSize="21sp" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/ChooseGameMode_customizeinfo"
+                    android:textColor="@color/secondText"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/choosegamemode_savedsetup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:singleLine="false"
+                android:text="@string/ChooseGameMode_your_list_settings"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/ActionBarDivider" />
+
+            <TextView
+                android:id="@+id/text_no_user_preset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:autoText="false"
+                android:text="@string/ChooseGameMode_havent_preset"
+                android:textColor="@color/secondText"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

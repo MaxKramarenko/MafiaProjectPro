@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.charleyskills.mafiaprojectpro"
+        minSdkVersion 14
+        versionCode 12
+        versionName '2.0.2'
+        multiDexEnabled true
+    }
+    productFlavors {
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFile 'D:/Personal_Folder/Projects/MafiaProjectPro/MafiaProjectPro/app/proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    signingConfigs {
+        release {
+            try
+            {
+                storeFile file("../../keystore.jks")
+                storePassword KEYSTORE_PASSWORD
+                keyAlias "charleyskills"
+                keyPassword KEY_PASSWORD
+            }
+            catch (ex)
+            {
+                throw new InvalidUserDataException("You should define KEYSTORE_PASSWORD and KEY_PASSWORD in gradle.properties.")
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(path: ':slideExpandableListView')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+    implementation files('libs/simple-xml-2.7.1.jar')
+}
